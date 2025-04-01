@@ -1,0 +1,16 @@
+* {
+    border: dotted;
+}
+
+#menu_container {
+    /* border: dotted; */
+
+    width: 100%;
+    /* 4 x 4 grid for photos as grid items */
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    grid-template-rows: repeat(7, 1fr);
+    gap: 20px;    
+
+
+}
