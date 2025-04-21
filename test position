@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Absolute vs Relative</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 40px;
+    }
+
+    .box {
+      width: 300px;
+      height: 200px;
+      border: 2px dashed #999;
+      position: relative; /* Try removing this to see what happens! */
+      background-color: #eef;
+    }
+
+    .box.no-position {
+      position: static; /* default */
+      background-color: #fee;
+    }
+
+    .absolute-child {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      background-color: #fc0;
+      padding: 5px 10px;
+      border: 1px solid #333;
+    }
+
+    h2 {
+      font-size: 1rem;
+      margin: 0 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Parent with position: relative -->
+    <div class="box">
+      <h2>Parent: relative</h2>
+      <div class="absolute-child">I'm positioned inside</div>
+    </div>
+
+    <!-- Parent with default (static) positioning -->
+    <div class="box no-position">
+      <h2>Parent: static</h2>
+      <div class="absolute-child">I'm positioned to body</div>
+    </div>
+  </div>
+</body>
+</html>
