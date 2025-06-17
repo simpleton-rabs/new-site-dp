@@ -10,10 +10,21 @@ body {
 }
 
 #container {
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     background-color: linen;
+    max-width: 800px;
+    /* min-width: 100px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
+}
+
+#click {
+    align-self: flex-start;
 }
 
 #intro {
