@@ -1,5 +1,5 @@
 * {
-    border: dotted;
+    /* border: dotted; */
 }
 
 body {
@@ -24,6 +24,10 @@ body {
 }
 
 #click {
+    align-self: flex-start;
+}
+
+#speaker {
     align-self: flex-start;
 }
 
