@@ -2,12 +2,39 @@
     /* border: dotted; */
 }
 
+/* @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@300&display=swap'); */
+
 body {
     /* width: 75vw; */
     /* height: 75vh; */
     background-color: black;
     position: relative;
 }
+
+h1  {
+    font-family: 'Bitcount Grid Double', system-ui;
+}
+
+h2  {
+    font-family: 'Bitcount Grid Double', system-ui;
+}
+
+p {
+    font-family: "Roboto";
+}
+
+
+/* .bitcount-grid-double-titlefont {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+} */
 
 #container {
     margin-top: 50px;
@@ -30,6 +57,8 @@ body {
 #speaker {
     align-self: flex-start;
 }
+
+
 
 #intro {
     /* display: none; */
