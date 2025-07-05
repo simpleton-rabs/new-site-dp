@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+</head>
+<body>
+    <script>
+        let time = 0;
+        
+        function setup() {
+            createCanvas(800, 400);
+            frameRate(60);
+        }
+        
+        function draw() {
+            background(135, 206, 235); // Sky blue
+            
+            // Draw multiple layers of mountains
+            drawMountains(200, 100, 0.002, 0.8, color(169, 169, 169)); // Back mountains
+            drawMountains(150, 50, 0.003, 1.0, color(128, 128, 128));   // Middle mountains
+            drawMountains(100, 20, 0.004, 1.2, color(96, 96, 96));     // Front mountains
+            
+            time += 0.001;
+        }
+        
+        function drawMountains(height, yOffset, freq, ampMult, c) {
+            fill(c);
+            noStroke();
+            
+            beginShape();
+            for(let x = 0; x <= width; x++) {
+                // Create smooth mountain peaks using Perlin noise
+                let y = height * noise(time + x * freq, time * 0.5);
+                
+                // Add amplitude variation based on position
+                let amp = map(x, 0, width, 0.5, 1);
+                y *= amp * ampMult;
+                
+                vertex(x, heightOffset(y, yOffset));
+            }
+            vertex(width, height + 100);
+            vertex(0, height + 100);
+            endShape(CLOSE);
+        }
+        
+        function heightOffset(y, offset) {
+            return height - y - offset;
+        }
+    </script>
+</body>
+</html>
