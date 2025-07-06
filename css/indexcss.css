@@ -8,7 +8,7 @@ body {
     /* width: 75vw; */
     /* height: 75vh; */
     background-color: black;
-    position: relative;
+    /* position: relative; */
 }
 
 h1  {
@@ -20,7 +20,7 @@ h2  {
 }
 
 p {
-    font-family: "Roboto";
+    font-family: 'Roboto Mono';
 }
 
 
@@ -157,22 +157,7 @@ p {
     transition: transform 10s ease-in-out;
 }  */
 
-
-#r4c4 {
-    align-self: center;
-    justify-self: center;
-}
-
 @keyframes rotateit {
     0% { transform: rotatez(0deg); }
     100% { transform: rotatez(360deg); }
-}
-
-@keyframes introanimate {
-    /* 0% { display: ; }
-    100% { display: none; } */
-
-    /* 0% { z-index: -10; } */
-    /* 50% { z-index: 10; } */
-    /* 100% { z-index: -10; } */
 }
