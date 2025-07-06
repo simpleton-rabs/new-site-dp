@@ -1,5 +1,5 @@
 * {
-    /* border: dotted; */
+    border: dotted;
     box-sizing: border-box;
     margin: 0;
 }
@@ -26,6 +26,13 @@ p {
     margin-bottom: 5px;
 }
 
+a {
+    text-decoration: none;
+    font-family: 'Roboto Mono';
+    font-size: 11px;
+    color: black;
+}
+
 #container {
     /* margin top/bottom */
     margin-top: 50px;
@@ -49,7 +56,7 @@ p {
 }
 
 #menu_container {
-    
+
     /* position: relative; */
 
     /* transform: translate(0,0,-1); */
@@ -57,27 +64,32 @@ p {
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
+
     /* align-items: center; */
     /* justify-items: center; */
     /* text-align: center;
      */
-     /* justify-content: center; */
+    /* justify-content: center; */
 
     /* border: dotted; */
 
-    width: 710px;
-    height: auto;
+    width: 90%;
+    /* height: auto; */
     background-color: linen;
-    /* 4 x 4 grid for photos as grid items */
-    /* display: none; */
+
     display: grid;
-    /* display: none; */
-    /* grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7, 1fr); */
-    grid-template-columns: repeat(7, 100px);
-    grid-template-rows: repeat(7, 100px);
-    justify-content: center;
-    /* gap: 20px;     */
+
+    grid-template-areas:
+        'space space space north space space space'
+        'space northwest space space space northeast space'
+        'space space space space space space space'
+        'west space space central space space east'
+        'space space space space space space space'
+        'space southwest space space space southeast space'
+        'space space space south space space space';
+        gap: 10px;
+        padding: 10px;
+        
 }
 
 .circles {
@@ -94,46 +106,56 @@ p {
     background-size: 100%;
     text-align: center;
     padding: 25px;
-    
+
 
 }
 
 #option1 {
-
+    grid-area: north;
 }
+#option2 {
+    grid-area: northeast;
+}
+#option3 {
+    grid-area: east;
+}
+#option4 {
+    grid-area: southeast;
+}
+#option5 {
+    grid-area: south;
+}
+#option6 {
+    grid-area: southwest;
+}
+#option7 {
+    grid-area: west;
+}
+#option8 {
+    grid-area: northwest;
+}
+
+#sun {
+    grid-area: central;
+}
+
+
 
 #centre {
     width: 300px;
     height: 300px;
     transform: rotatez(0deg);
     animation-name: rotateit;
-   animation-duration: 30s;
-   animation-iteration-count: infinite;
-}
-    /* transition: transform 30s ease-in-out; */
-    /* align-self: baseline; */
-
-/* #centre:hover {
-    transform: rotatez(360deg);
-    transition: transform 10s ease-in-out;
-}  */
-
-
-#r4c4 {
-    align-self: center;
-    justify-self: center;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes rotateit {
-    0% { transform: rotatez(0deg); }
-    100% { transform: rotatez(360deg); }
-}
+    0% {
+        transform: rotatez(0deg);
+    }
 
-@keyframes introanimate {
-    /* 0% { display: ; }
-    100% { display: none; } */
-
-    /* 0% { z-index: -10; } */
-    /* 50% { z-index: 10; } */
-    /* 100% { z-index: -10; } */
+    100% {
+        transform: rotatez(360deg);
+    }
 }
