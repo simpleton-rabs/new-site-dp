@@ -1,0 +1,178 @@
+* {
+    /* border: dotted; */
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@300&display=swap'); */
+
+body {
+    /* width: 75vw; */
+    /* height: 75vh; */
+    background-color: black;
+    position: relative;
+}
+
+h1  {
+    font-family: 'Bitcount Grid Double', system-ui;
+}
+
+h2  {
+    font-family: 'Bitcount Grid Double', system-ui;
+}
+
+p {
+    font-family: "Roboto";
+}
+
+
+/* .bitcount-grid-double-titlefont {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+} */
+
+#container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: linen;
+    max-width: 800px;
+    /* min-width: 100px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#click {
+    align-self: flex-start;
+}
+
+#speaker {
+    align-self: flex-start;
+}
+
+
+
+#intro {
+    /* display: none; */
+    display: flex;
+    /* position: relative; */
+    /* position: absolute; */
+    /* width: 100vw;
+    height: 100vh; */
+    /* z-index: 10; */
+    background-color: linen;
+
+    /* animation-name: introanimate;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+  */
+    /* transform: translateZ(10); */
+    /* transform: translate3d(0, 0, 1); */
+}
+
+#introimg {
+    /* transform: scale(50%);
+     */
+     width: 50%;
+}
+
+#met {
+    width: 25%;
+}
+
+
+
+#menu_container {
+    
+    /* position: relative; */
+
+    /* transform: translate(0,0,-1); */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* align-items: center; */
+    /* justify-items: center; */
+    /* text-align: center;
+     */
+     /* justify-content: center; */
+
+    /* border: dotted; */
+
+    width: 710px;
+    height: auto;
+    background-color: linen;
+    /* 4 x 4 grid for photos as grid items */
+    /* display: none; */
+    /* display: grid; */
+    display: none;
+    /* grid-template-columns: repeat(7, 1fr); 
+    grid-template-rows: repeat(7, 1fr); */
+    grid-template-columns: repeat(7, 100px); 
+    grid-template-rows: repeat(7, 100px);
+    justify-content: center;
+    /* gap: 20px;     */
+}
+
+.cell {
+    /* width: vw/7; */
+    /* height: 100/7%; */
+    /* text-align: center; */
+    
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-radius: 50%;
+    color: blue;
+    background-color: blue; 
+    /* padding: 10px; */
+    margin: 5px;
+
+}
+
+#centre {
+    width: 300px;
+    height: 300px;
+    transform: rotatez(0deg);
+    animation-name: rotateit;
+   animation-duration: 30s;
+   animation-iteration-count: infinite;
+}
+    /* transition: transform 30s ease-in-out; */
+    /* align-self: baseline; */
+
+/* #centre:hover {
+    transform: rotatez(360deg);
+    transition: transform 10s ease-in-out;
+}  */
+
+
+#r4c4 {
+    align-self: center;
+    justify-self: center;
+}
+
+@keyframes rotateit {
+    0% { transform: rotatez(0deg); }
+    100% { transform: rotatez(360deg); }
+}
+
+@keyframes introanimate {
+    /* 0% { display: ; }
+    100% { display: none; } */
+
+    /* 0% { z-index: -10; } */
+    /* 50% { z-index: 10; } */
+    /* 100% { z-index: -10; } */
+}
