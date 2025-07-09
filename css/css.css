@@ -46,8 +46,8 @@ a {
     /* max-width: 800px; */
     /* min-width: 100px; */
     width: 90vw;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     align-items: center;
 }
 
@@ -73,9 +73,9 @@ a {
 
     /* border: dotted; */
 
-    width: 90%;
+    width: 100%;
     /* height: auto; */
-    background-color: linen;
+    /* background-color: linen; */
 
     display: grid;
 
@@ -87,8 +87,8 @@ a {
         'space space space space space space space'
         'space southwest space space space southeast space'
         'space space space south space space space';
-        gap: 10px;
-        padding: 10px;
+        /* gap: 10px; */
+        /* padding: 10px; */
         
 }
 
@@ -111,7 +111,10 @@ a {
 }
 
 #option1 {
+    /* background-image: url("/menuimg/dp.png"); */
     grid-area: north;
+    /* background-repeat: no-repeat; */
+    /* background-size: 100%; */
 }
 #option2 {
     grid-area: northeast;
@@ -136,7 +139,7 @@ a {
 }
 
 #sun {
-    grid-area: central;
+    /* grid-area: central; */
 }
 
 

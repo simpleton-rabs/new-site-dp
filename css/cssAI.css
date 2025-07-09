@@ -1,0 +1,66 @@
+/* css.css */
+:root {
+    --primary-color: #1976d2;
+    --secondary-color: #7986cb;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Bitcount Grid Double', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+#menu_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.circles {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid var(--secondary-color);
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-break: break-word;
+}
+
+.circles:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(121, 134, 203, 0.3);
+}
+
+.circles:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+    #menu_container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
