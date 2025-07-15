@@ -1,7 +1,7 @@
 
 // create audio object
 const soundTwo = new Audio("../sounds/sound2.mp3");
-soundOne.loop = true;
+soundTwo.loop = true;
 // const for speaker icon
 const speakerIcon = document.getElementById("speaker");
 // const for greeting

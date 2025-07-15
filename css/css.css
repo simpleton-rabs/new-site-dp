@@ -77,16 +77,16 @@ a {
     /* height: auto; */
     /* background-color: linen; */
 
-    display: grid;
+    /* display: grid; */
 
-    grid-template-areas:
+    /* grid-template-areas:
         'space space space north space space space'
         'space northwest space space space northeast space'
         'space space space space space space space'
         'west space space central space space east'
         'space space space space space space space'
         'space southwest space space space southeast space'
-        'space space space south space space space';
+        'space space space south space space space'; */
         /* gap: 10px; */
         /* padding: 10px; */
         
@@ -110,13 +110,13 @@ a {
 
 }
 
-#option1 {
+/* #option1 { */
     /* background-image: url("/menuimg/dp.png"); */
-    grid-area: north;
+    /* grid-area: north; */
     /* background-repeat: no-repeat; */
     /* background-size: 100%; */
-}
-#option2 {
+/* } */
+/* #option2 {
     grid-area: northeast;
 }
 #option3 {
@@ -141,6 +141,11 @@ a {
 #sun {
     grid-area: central;
 }
+
+#empty{
+    grid-area: space;
+    background-image: none;
+} */
 
 
 
