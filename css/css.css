@@ -60,6 +60,7 @@ a:hover {
 
 #speaker {
     align-self: flex-start;
+    cursor: pointer;
 }
 
 #menu_container {
@@ -98,6 +99,8 @@ a:hover {
         /* padding: 10px; */
 
         display: flex;
+        flex-wrap: wrap;
+
         
 }
 

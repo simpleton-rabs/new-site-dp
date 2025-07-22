@@ -51,6 +51,7 @@ p {
 
 #speaker {
     align-self: flex-start;
+    cursor: pointer;
 }
 
 #centre {
