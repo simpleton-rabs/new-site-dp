@@ -2,6 +2,7 @@
     /* border: dotted; */
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -39,6 +40,8 @@ a:hover {
     color: linen;
 }
 
+
+
 #container {
     /* margin top/bottom */
     margin-top: 50px;
@@ -59,7 +62,7 @@ a:hover {
 }
 
 #speaker {
-    align-self: flex-start;
+    /* align-self: flex-start; */
     cursor: pointer;
 }
 
@@ -100,9 +103,35 @@ a:hover {
 
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
 
         
 }
+
+/*    <a href="hello.html"><img src="menuimg/hello.png" id="option1" /></a>
+            <a href="digitalp.html"><img src="menuimg/digitalp.png" /></a>
+            <a href="aboutme.html"><img src="menuimg/aboutme.png" /></a>
+            <a href="music.html"><img src="menuimg/music.png" /></a>
+            <a href="rabitthole.html"><img src="menuimg/rabbith.png" /></a>
+            <a href="links.html"><img src="menuimg/links.png" /></a>
+            <a href="contactme.html"><img src="menuimg/contactme.png" /></a>
+ */          
+
+ li {
+    height: 200px;
+    wicth: 200x;
+ }
+
+#option1 {
+    
+    background-image: url("/menuimg/hello.png");
+}
+#option1.hover {
+
+    background-image: url("menuimg/helloi.png");
+
+}
+
 
 .circles {
     width: 100px;
